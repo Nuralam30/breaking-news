@@ -1,22 +1,20 @@
 import React from 'react';
 import './Header.css';
-import { Card } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-            </Card>
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home">News360</Navbar.Brand>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#features">To Newses</Nav.Link>
+                        <Nav.Link href="#pricing">About Us</Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
         </div>
     );
 };
