@@ -8,8 +8,8 @@ const News = (props) => {
     console.log(props.article)
     return (
         <div className='news'>
-            <Card style={{ width: '50rem' }}>
-                <Card.Img variant="top" src={urlToImage} height="200px" />
+            <Card style={{ width: '30rem' }}>
+                <Card.Img variant="top" src={urlToImage} />
                 <Card.Body>
                     <Card.Title> {title} </Card.Title>
                     <Card.Text> {description} </Card.Text>
