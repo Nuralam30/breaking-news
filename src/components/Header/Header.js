@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">News360</Navbar.Brand>
@@ -15,7 +15,7 @@ const Header = () => {
                     </Nav>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 

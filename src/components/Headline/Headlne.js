@@ -16,12 +16,12 @@ const Headlne = () => {
     const articles20 = articles.slice(0, 20)
     
     return (
-        <div>
+        <React.Fragment>
             {
                 articles20.map( (article, ind) => <News key={ind} article={article}></News>)
             }
             <Button variant="primary">Primary</Button>{' '}
-        </div>
+        </React.Fragment>
     );
 };
 
